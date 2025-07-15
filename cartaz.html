@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cineplexus</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header class="bg-dark text-light py-3 shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="home.html" class="text-light text-decoration-none">
+        <h1 class="h3 mb-0 fw-bold">Cineplexus</h1>
+      </a>
+      <nav>
+        <ul class="list-unstyled d-flex mb-0 gap-4">
+          <li><a href="index.html" class="text-light text-decoration-none fw-semibold">Home</a></li>
+          <li><a href="cartaz.html" class="text-light text-decoration-none fw-semibold">Cartaz</a></li>
+          <li><a href="termodeuso.html" class="text-light text-decoration-none fw-semibold">Termo de Uso</a></li>
+          <li><a href="contato.html" class="text-light text-decoration-none fw-semibold">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-2 text-center">Filmes em Cartaz</h1>
+          <hr class="mt-0 mb-4">
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/jurassicworld.jpg" alt="Jurassic World" class="d-block w-100" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Jurassic World</h5>
+                  <p>Em cartaz nos melhores cinemas.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/wanda.jpg" alt="Wanda Madness" class="d-block w-100" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Wanda Madness</h5>
+                  <p>Não perca esta estreia.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/homemdeferro.jpg" alt="Homem de Ferro" class="d-block w-100" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Homem de Ferro</h5>
+                  <p>Em cartaz nos melhores cinemas.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="filmes">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card h-100 d-flex flex-row">
+              <img src="img/filme5.jpg" class="img-fluid" alt="Inferno de Vidro" style="max-width: 150px;">
+              <div class="card-body">
+                <h5 class="card-title">Inferno de Vidro</h5>
+                <p class="card-text">Após um incêndio destruir um laboratório em Oslo, uma investigadora descobre que os sobreviventes compartilham alucinações idênticas.</p>
+                <span class="badge bg-danger">16 anos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 d-flex flex-row">
+              <img src="img/filme1.jpg" class="img-fluid" alt="Eco do Vazio" style="max-width: 150px;">
+              <div class="card-body">
+                <h5 class="card-title">Eco do Vazio</h5>
+                <p class="card-text">Em 2191, um astronauta acorda sem memória numa nave abandonada, onde ecos de vozes sugerem que ele pode não estar sozinho.</p>
+                <span class="badge bg-warning text-dark">14 anos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 d-flex flex-row">
+              <img src="img/filme4.jpg" class="img-fluid" alt="Alvorada das Areias" style="max-width: 150px;">
+              <div class="card-body">
+                <h5 class="card-title">Alvorada das Areias</h5>
+                <p class="card-text">Uma cartógrafa desafia o império ao mapear regiões proibidas e encontra uma civilização esquecida que detém o segredo da imortalidade.</p>
+                <span class="badge bg-success">12 anos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 d-flex flex-row">
+              <img src="img/filme2.jpg" class="img-fluid" alt="Dente de Ouro" style="max-width: 150px;">
+              <div class="card-body">
+                <h5 class="card-title">Dente de Ouro</h5>
+                <p class="card-text">Um dentista falido começa a roubar pacientes milionários com ajuda de um hipnotizador — até cruzar com a máfia russa.</p>
+                <span class="badge bg-danger">16 anos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 d-flex flex-row">
+              <img src="img/filme3.jpg" class="img-fluid" alt="Zero Latência" style="max-width: 150px;">
+              <div class="card-body">
+                <h5 class="card-title">Zero Latência</h5>
+                <p class="card-text">Um ex-agente precisa sabotar uma IA antes que ela execute seu plano de controle populacional.</p>
+                <span class="badge bg-warning text-dark">14 anos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 d-flex flex-row">
+              <img src="img/filme6.jpg" class="img-fluid" alt="Terceira Margem do Fim" style="max-width: 150px;">
+              <div class="card-body">
+                <h5 class="card-title">Terceira Margem do Fim</h5>
+                <p class="card-text">Uma menina começa a prever tragédias escrevendo num caderno. O vilarejo inicia uma caça mística para detê-la.</p>
+                <span class="badge bg-success">12 anos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center pt-3">
+        <hr>
+        <p>Sujeito a alterações sem aviso prévio, verificar com antecedência.</p>
+        <hr>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Contato</h5>
+          <p class="mb-1"><i class="bi bi-envelope-fill"></i> Email:
+            <a href="mailto:cineplexus@hotmail.com" class="link-light">cineplexus@hotmail.com</a>
+          </p>
+          <p><i class="bi bi-telephone-fill"></i> Telefone:
+            <a href="tel:+5511999999999" class="link-light">(11) 99999-9999</a>
+          </p>
+          <p><i class="bi bi-telephone-fill"></i> Av. Brig. Faria Lima, 2232, Shopping Iguatemi</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Localização</h5>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> São Paulo, SP, Brasil</p>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Rio de Janeiro, RJ, Brasil</p>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Fortaleza, CE, Brasil</p>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Curitiba, PR, Brasil</p>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Porto Alegre, RS, Brasil</p>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Manaus, AM, Brasil</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Serviços</h5>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Sessões padrão e especiais</p>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Eventos privados</p>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Cine-escola</p>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Planos de assinatura</p>
+          <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> Alimentos e bebidas</p>
+        </div>
+      </div>
+
+      <section class="text-center pt-3 border-top border-secondary">
+        <p>No Cineplexus, somos apaixonados por proporcionar experiências cinematográficas inesquecíveis. Localizados no
+          coração de São Paulo, nosso cinema oferece uma programação diversificada, desde os lançamentos mais aguardados
+          até filmes clássicos, em um ambiente moderno e confortável. Comprometidos com a qualidade e inovação, buscamos
+          sempre superar as expectativas do público, oferecendo não apenas filmes, mas momentos especiais para todos os
+          amantes da sétima arte.</p>
+      </section>
+
+      <section class="text-center pt-3 border-top border-secondary">
+        <p>&copy; Uso limitado somente ao cinema Cineplexus.</p>
+      </section>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
